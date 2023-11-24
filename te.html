@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Models</title>
+    <link rel="stylesheet" href="/css/cars.css">
+</head>
+
+<body>
+    <script>
+        const carArrays = [
+            {
+                brand: "astonMartin",
+                models: [
+                    {
+                        id: 1,
+                        name: "Valhalla",
+                        price: "",
+                        image: "images/showroom.jpg"
+                    },
+                    {
+                        id: 2,
+                        name: "Vantage",
+                        price: "",
+                        image: "images/showroom.jpg"
+                    },
+                    {
+                        id: 3,
+                        name: "Valour",
+                        price: "",
+                        image: "images/showroom.jpg"
+                    },
+                    {
+                        id: 4,
+                        name: "Valkyrie",
+                        price: "",
+                        image: "images/showroom.jpg"
+                    }
+                ]
+            },
+            {
+                brand: "bentley",
+                models: [
+                    {
+                        id: 1,
+                        name: "Bentayga EBW Range",
+                        price: "",
+                        image: "images/showroom.jpg"
+                    },
+                    {
+                        id: 2,
+                        name: "The Flying Spur Range",
+                        price: "",
+                        image: "images/showroom.jpg"
+                    },
+                    {
+                        id: 3,
+                        name: "Continental Gt Range",
+                        price: "",
+                        image: "images/showroom.jpg"
+                    },
+                    {
+                        id: 4,
+                        name: "Mulliner",
+                        price: "",
+                        image: "images/showroom.jpg"
+                    }
+                ]
+            },
+            {
+                brand: "ferrari",
+                models: [
+                    // Add your Ferrari objects here
+                ]
+            }
+        ];
+
+        const carListContainer = document.querySelector('body');
+
+        carArrays.forEach(carBrand => {
+            const heading = document.createElement('h2');
+            heading.textContent = carBrand.brand;
+            carListContainer.appendChild(heading);
+
+            carBrand.models.forEach(car => {
+                const carElement = document.createElement('divcars');
+                carElement.innerHTML = `
+                    <div>
+                        <div class="car-img">
+                            <img src=${car.image}>
+                        </div>
+                        <div class="car-name">
+                            <h3>${car.name}</h3>
+                        </div>
+                        <div class="car-rating">
+                            <i class="fa fa-solid fa-star"></i>
+                            <i class="fa fa-solid fa-star"></i>
+                            <i class="fa fa-solid fa-star"></i>
+                            <i class="fa fa-solid fa-star"></i>
+                        </div>
+                        <div class="car-price">
+                            $${car.price}
+                        </div>
+                    </div>`;
+                carListContainer.appendChild(carElement);
+            });
+        });
+    </script>
+</body>
+
+</html>

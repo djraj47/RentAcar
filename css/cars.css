@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-image: radial-gradient(#320643, #140534);
+    height: 700rem;
+    color: white;
+
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.header ul {
+    margin-left: 20px;
+    display: flex;
+    gap: 30px;
+
+}
+
+.header .logo {
+    width: 140px;
+    margin-left: 20px;
+}
+
+/* search-bar */
+.search-bar {
+    text-align: center;
+}
+
+.search-bar input {
+    width: 700px;
+    height: 50px;
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    outline: none;
+    border: none;
+    margin-left: -10px;
+    width: 50px;
+    height: 50px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(188, 157, 188);
+}
+
+/* shopbybrand */
+.heading {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.heading h2 {
+    font-size: 2rem;
+}
+
+.shopbybrand {
+    margin: 100px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopbybrand div {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(20, 1, 49);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 12px;
+    gap: 5px;
+}
+
+
+.carss {
+    margin: 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.car-img img {
+    width: 300px;
+    border-radius: 10px;
+
+}
+
+.brand-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/*  */
+.cars {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cars .cars-bio {
+    margin-bottom: 25px;
+}
+
+.cars .img img {
+    width: 300px;
+}
+
+.car-description {
+    margin-top: 25px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px;
+    color: #858484;
+    border-top: 1px solid #cfcfcf;
+
+}
+
+.car-description .car-features {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.car-description .car-features i {
+    padding-top: 4px;
+    font-size: .8rem;
+}
+
+.car-description .car-milage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #858484;
+    gap: 5px;
+}
+
+.car-description .car-milage i {
+    font-size: .8rem;
+    padding-top: 2px;
+}
+
+.car-description .route {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.car-description .route i {
+    font-size: .8rem;
+}
+
+
+.car-d {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cars .car-carausel div {
+    margin-top: -2px;
+    width: 58px;
+    height: 3px;
+    background-color: #CCCCCC;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.cars .car-carausel {
+    display: flex;
+    gap: 2.5px;
+}
+
+.car-price {
+    padding: 5px 15px;
+    height: fit-content;
+    background-color: #6C98E1;
+}
